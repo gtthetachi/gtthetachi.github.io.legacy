@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	useLargeImages="false"
+	useSmallImages="false"
+	cropToFit="false"
+	useFullscreenExpand="true"
+	useThumbDots="false"
+	backgroundColor="rgba(255,255,255,0)"
+	textColor="rgba(255,255,255,1)"
+	thumbFrameColor="rgba(255,255,255,.5)"
+
+>
+  <image imageURL="images/Spring2014_AlphaNu.jpg"
+	thumbURL="thumbs/Spring2014_AlphaNu.jpg"
+	linkURL="images/Spring2014_AlphaNu.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/John/Desktop/OX/Spring2014_AlphaNu.jpg">
+    <title><![CDATA[Alpha Nu Spring 2014]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/227836_129088233836273_1304782_n.jpg"
+	thumbURL="thumbs/227836_129088233836273_1304782_n.jpg"
+	linkURL="images/227836_129088233836273_1304782_n.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/John/Desktop/OX/227836_129088233836273_1304782_n.jpg">
+    <title><![CDATA[House]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/4688_95017952546_2487932_n.jpg"
+	thumbURL="thumbs/4688_95017952546_2487932_n.jpg"
+	linkURL="images/4688_95017952546_2487932_n.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/John/Desktop/OX/4688_95017952546_2487932_n.jpg">
+    <title><![CDATA[Snow]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/165410_255325811235029_474282290_n.jpg"
+	thumbURL="thumbs/165410_255325811235029_474282290_n.jpg"
+	linkURL="images/165410_255325811235029_474282290_n.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/John/Desktop/OX/165410_255325811235029_474282290_n.jpg">
+    <title><![CDATA[Greek Week]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/220698_130130417065388_3523842_o.jpg"
+	thumbURL="thumbs/220698_130130417065388_3523842_o.jpg"
+	linkURL="images/220698_130130417065388_3523842_o.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/John/Desktop/OX/220698_130130417065388_3523842_o.jpg">
+    <title><![CDATA[Heated Pool in the Backyard]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/240218_130130367065393_2743818_o.jpg"
+	thumbURL="thumbs/240218_130130367065393_2743818_o.jpg"
+	linkURL="images/240218_130130367065393_2743818_o.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/John/Desktop/OX/240218_130130367065393_2743818_o.jpg">
+    <title><![CDATA[Back of House]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/461526_3035908572356_1766081843_o.jpg"
+	thumbURL="thumbs/461526_3035908572356_1766081843_o.jpg"
+	linkURL="images/461526_3035908572356_1766081843_o.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/John/Desktop/OX/461526_3035908572356_1766081843_o.jpg">
+    <title><![CDATA[Greek Week Human Pyramid]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/462336_3035073911490_1995141739_o.jpg"
+	thumbURL="thumbs/462336_3035073911490_1995141739_o.jpg"
+	linkURL="images/462336_3035073911490_1995141739_o.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/John/Desktop/OX/462336_3035073911490_1995141739_o.jpg">
+    <title><![CDATA[TUG]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/468359_3052071496419_1730744357_o.jpg"
+	thumbURL="thumbs/468359_3052071496419_1730744357_o.jpg"
+	linkURL="images/468359_3052071496419_1730744357_o.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/John/Desktop/OX/468359_3052071496419_1730744357_o.jpg">
+    <title><![CDATA[Greek Week Slam Dunk]]></title>
+    <caption><![CDATA[Daniel McElhannon]]></caption>
+  </image>
+  <image imageURL="images/478947_3030069586385_1157731978_o.jpg"
+	thumbURL="thumbs/478947_3030069586385_1157731978_o.jpg"
+	linkURL="images/478947_3030069586385_1157731978_o.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/John/Desktop/OX/478947_3030069586385_1157731978_o.jpg">
+    <title><![CDATA[Greek Week Football Toss]]></title>
+    <caption><![CDATA[Greg Klingshirn]]></caption>
+  </image>
+  <image imageURL="images/551012_255325927901684_411818924_n.jpg"
+	thumbURL="thumbs/551012_255325927901684_411818924_n.jpg"
+	linkURL="images/551012_255325927901684_411818924_n.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/John/Desktop/OX/551012_255325927901684_411818924_n.jpg">
+    <title><![CDATA[Greek Week Climb Mt. Olympus]]></title>
+    <caption><![CDATA[Trey McMIllon]]></caption>
+  </image>
+  <image imageURL="images/1240566_10151598115538587_302937932_n.jpg"
+	thumbURL="thumbs/1240566_10151598115538587_302937932_n.jpg"
+	linkURL="images/1240566_10151598115538587_302937932_n.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/John/Desktop/OX/1240566_10151598115538587_302937932_n.jpg">
+    <title><![CDATA[Run for the Roses 2o13]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_0788.jpg"
+	thumbURL="thumbs/IMG_0788.jpg"
+	linkURL="images/IMG_0788.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/John/Desktop/OX/IMG_0788.jpg">
+    <title><![CDATA[Billiard Room]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/IMG_0790.jpg"
+	thumbURL="thumbs/IMG_0790.jpg"
+	linkURL="images/IMG_0790.jpg"
+	linkTarget="_blank"
+	sourcePath="/Users/John/Desktop/OX/IMG_0790.jpg">
+    <title><![CDATA[Chapter Room]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>
