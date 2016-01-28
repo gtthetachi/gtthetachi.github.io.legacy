@@ -374,6 +374,12 @@ div.body-content {
     margin-top: 60px;
 }
 
+/*gallery.html*/
+div.insta-gallery {
+    width: 750px;
+    margin: 0 auto;
+}
+
 @media screen and (min-width: 380px) {
 	header {
 		margin-bottom: 0;
