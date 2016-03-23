@@ -337,12 +337,14 @@ footer img {
 }
 
 .twitter-timeline {
-	float:;
+	/*float:; why?? */
 }
 
 /* alex additions */
 div.intro {
-    height: 90vh;
+    position: relative;
+
+    height: 100vh;
     padding-top: 100px;
     margin-bottom: 0;
 
@@ -354,6 +356,9 @@ div.intro {
 }
 
 .intro-content {
+    position: absolute;
+    bottom: 20px;
+
     margin-left: 50px;
     width: 400px;
 }
@@ -361,12 +366,12 @@ div.intro {
 .intro-content h1 {
     text-align: left;
     font-size: 65px;
-    color: gray;
+    color: #C0C0C0;
 }
 
 .intro-content p {
     margin-left: 1px;
-    color: #B5696E;
+    color: #AAAAAA;
     margin-top: 10px;
 }
 
