@@ -2,57 +2,41 @@
 <html lang="en">
   <head>
     <title>Theta Chi | About</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta charset="UTF-8" />
-    <meta name=”description” content=”The Alpha Nu chapter of Theta Chi always strives for excellence in academics, service, and campus involvement. As one of the largest social fraternities on Tech&#39s campus,” />
+    <meta name="description" content="The Alpha Nu chapter of Theta Chi always strives for excellence in academics, service, and campus involvement. As one of the largest social fraternities on Tech&#39s campus," />
 
+    <!--#include virtual="includes/head_common.html" -->
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <!-- Images -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
-    <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700,600,800' rel='stylesheet' type='text/css'>
-
-    <!-- Scripts-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="scripts.js"></script>
-
+    <script src="scripts/instafeed-1.4.1/instafeed.min.js"></script>
+    <script>
+        //https://www.instagram.com/oauth/authorize/?client_id=a4fe31f78b1c4b968e85bd8ac636b296&redirect_uri=http://www.gtthetachi.org&response_type=code
+//https://www.instagram.com/oauth/authorize/?client_id=a4fe31f78b1c4b968e85bd8ac636b296&redirect_uri=http://www.gtthetachi.org&response_type=token
+        new Instafeed({
+                get: 'user',
+                userId: '2289423064',//'3061977639',//, //gtthetachi user id
+                accessToken: '2235594321.1fb234f.58f38c5ed45e47e0aa1d9d5f4f39214e', //TODO: stop using some random chinese dude's api key
+                //'3061977639.a4fe31f.91c81053c83b46aa96014a7b4392d872', // alexhirschberg access token
+                template: '<a class="ig-embed" style="background-image:url(\'{{image}}\');" href="{{link}}"></a>',
+                resolution: 'standard_resolution',
+                error: function (e) {
+                    console.error('Error fetching instagram data:', e)
+                    $(instafeed).addClass('error');
+                }
+            }).run();
+    </script>
   </head>
 
   <body>
     <header id="header">
-      <div class="container">
-        <a href="index.html"><img src="images/logo.png"></a>
-        <nav>
-          <ul class="nav-content cl-effect-21">
-            <li><a href="about.html">About</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="officers.html">Officers</a></li>
-            <li><a href="alumni.html">Alumni</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="stretch"></li>
-          </ul>
-          <a href="#" id="pull">menu</a>
-        </nav>
-      </div>
+        <!--#include virtual="includes/header.html" -->
     </header>
-    <div class="insta-gallery">
-<!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/1cb1f0b80e991e66e45e9a6472b5e3f20c2de7ca.html" id="instansive_1cb1f0b80e" name="instansive_1cb1f0b80e"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-    </div>
-    <footer>
-      <a href="http://www.twitter.com/gtthetachi"><img height="32" src="images/twitter.svg"></a>
-      <a href="https://www.facebook.com/pages/Theta-Chi-Fraternity/21251014534"><img height="32" src="images/facebook.svg"></a>
-      <a href="http://www.linkedin.com/company/theta-chi-fraternity"><img height="32" src="images/linkedin.svg"></a>
+    <div class="body-content">
+        <section class="main">
+            <div id="instafeed"></div>
+        </section>
+
     </footer>
     </div>
     </section>
+    </div>
   </body>
 </html>
