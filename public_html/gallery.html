@@ -8,15 +8,15 @@
 
     <script src="scripts/instafeed-1.4.1/instafeed.min.js"></script>
     <script>
-        //https://www.instagram.com/oauth/authorize/?client_id=a4fe31f78b1c4b968e85bd8ac636b296&redirect_uri=http://www.gtthetachi.org&response_type=code
-//https://www.instagram.com/oauth/authorize/?client_id=a4fe31f78b1c4b968e85bd8ac636b296&redirect_uri=http://www.gtthetachi.org&response_type=token
+        //https://www.instagram.com/oauth/authorize/?client_id=a4fe31f78b1c4b968e85bd8ac636b296&redirect_uri=http://www.gtthetachi.org&response_type=token
         new Instafeed({
                 get: 'user',
-                userId: '2289423064',//'3061977639',//, //gtthetachi user id
+                userId: '2289423064',
                 accessToken: '2235594321.1fb234f.58f38c5ed45e47e0aa1d9d5f4f39214e', //TODO: stop using some random chinese dude's api key
                 //'3061977639.a4fe31f.91c81053c83b46aa96014a7b4392d872', // alexhirschberg access token
                 template: '<a class="ig-embed" style="background-image:url(\'{{image}}\');" href="{{link}}"></a>',
                 resolution: 'standard_resolution',
+                limit: 60,
                 error: function (e) {
                     console.error('Error fetching instagram data:', e)
                     $(instafeed).addClass('error');
@@ -32,11 +32,11 @@
     <div class="body-content">
         <section class="main">
             <div id="instafeed"></div>
+            <footer>
+                <!--#include virtual="includes/footer.html" -->
+            </footer>
         </section>
 
-    </footer>
-    </div>
-    </section>
     </div>
   </body>
 </html>
