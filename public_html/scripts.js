@@ -54,7 +54,7 @@ $(window).resize(function(){
                     console.error('Error fetching instagram data:', e)
                         $(instafeed).addClass('error');
                 }
-            }).run();
+            }).run();   
     }
 
     // In case something funky happens where the Instafeed plugin isn't already
