@@ -15,7 +15,6 @@ body {
 }
 
 p {
-    margin-top: -3px;
     margin-bottom: 20px;
 }
 
@@ -23,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto Slab";
     text-align:center;
     color: #B1242F;
+    margin-bottom: 0.5em;
 }
 
 h1 {
@@ -366,6 +366,7 @@ div.intro {
     text-align: left;
     font-size: 65px;
     color: white;
+    margin: 0;
 }
 
 .intro-content p {
@@ -374,14 +375,8 @@ div.intro {
     margin-top: 10px;
 }
 
-div.body-content {
+.body-content {
     margin-top: 60px;
-}
-
-/*gallery.html*/
-div.insta-gallery {
-    width: 750px;
-    margin: 0 auto;
 }
 
 @media screen and (min-width: 380px) {
@@ -489,21 +484,47 @@ div.insta-gallery {
 
 /*=======================================GALLERY=========================================*/
 
-.ig-embed {
+a.ig-embed {
     display: inline-block;
-    margin: 5px;
+    padding: 5px;
 
     width: 200px;
     height: 200px;
-    
+
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 
+    position: relative;
 }
 
-.ig-embed img:hover {
-    transform: scale(1.05, 1.05);
+a.ig-embed .ig-embed-desc {
+    display: none;
+    transition: all 0.5s;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 25px;
+    font-weight: bold;
+}
+
+a.ig-embed .ig-embed-desc .link-flair {
+    margin-top: 20px;
+    text-align: center;
+    color: #BEBEBE;
+    font-weight: 100;
+}
+
+a.ig-embed:hover .ig-embed-desc {
+    display: block;
+
+    background-color: rgba(58, 58, 58, 0.9);
+    color: white;
+    transition: none;
 }
 
 #instafeed.error {
@@ -512,4 +533,26 @@ div.insta-gallery {
 }
 #instafeed.error:before {
     content: "Whoops, looks like something went wrong with our instagram widget.  Sorry about that!"
+}
+
+/*=======================================TODO=========================================*/
+.todo {
+    color: #153A68;
+    font-style: italic;
+    background-color: rgba(255, 182, 24, 0.57);
+    padding: 5px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.todo:before {
+    content: "TODO:";
+    display: block;
+    background-color: #956806;
+    color: #FFF2D7;
+    font-weight: bold;
+    font-style: normal;
+    font-size: x-large;
+    margin: -5px -5px 5px -5px;
+    padding: 2px;
 }
