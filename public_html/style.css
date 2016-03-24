@@ -548,12 +548,19 @@ a.ig-embed:hover .ig-embed-desc {
     cursor: pointer;
 }
 
+#instafeed {
+    max-width: 700px;
+    margin: 15px auto;
+
+}
+
 #instafeed.error {
     border: 2px solid red;
     color: #770E0E;
+    padding: 10px;
 }
 #instafeed.error:before {
-    content: "Whoops, looks like something went wrong with our instagram widget.  Sorry about that!"
+    content: "Whoops, looks like something went wrong with our instagram widget.  Sorry about that!  Visit our instagram page directly with the link below."
 }
 
 /*=======================================TODO=========================================*/

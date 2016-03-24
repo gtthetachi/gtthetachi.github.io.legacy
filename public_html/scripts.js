@@ -22,13 +22,14 @@ $(window).resize(function(){
     "use strict";
     //https://www.instagram.com/oauth/authorize/?client_id=a4fe31f78b1c4b968e85bd8ac636b296&redirect_uri=http://www.gtthetachi.org&response_type=token
     var run_instafeed = function () {
-        var ig_embed_template = '<a class="ig-embed" ' +
+        var ig_embed_template = '<div class="col-md-4">' +
+            '<a class="ig-embed" ' +
             '   style="background-image:url(\'{{image}}\');" ' +
             '   href="{{link}}">' +
             ' <div class="ig-embed-desc">{{caption}}' +
             '   <div class="link-flair">Show on Instagram &raquo;</div>' +
             ' </div>' +
-            '</a>'
+            '</a></div>';
             new Instafeed({
                 get: 'user',
                 userId: '2289423064',
@@ -54,7 +55,7 @@ $(window).resize(function(){
                     console.error('Error fetching instagram data:', e)
                         $(instafeed).addClass('error');
                 }
-            }).run();   
+            }).run();
     }
 
     // In case something funky happens where the Instafeed plugin isn't already
