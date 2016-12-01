@@ -350,23 +350,22 @@ div.intro {
 
 .intro-content {
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
 
-    margin-left: 50px;
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
 }
 
 .intro-content h1 {
-    text-align: left;
     font-size: 65px;
-    color: white;
-    margin: 0;
+    margin: 0 auto;
 }
 
-.intro-content p {
-    margin-left: 1px;
-    color: #AAAAAA;
-    margin-top: 10px;
+.intro-content .arrow {
+    text-align: center;
+    font-size: large;
 }
 
 .body-content {
@@ -535,16 +534,30 @@ a.ig-embed:hover .ig-embed-desc {
 
     transition: color 0.5s, border 0.5s;
 }
+
+.ig-load-more:hover {
+    color: #2D79C1;
+    border-color: #2D79C1;
+}
+
+a.ig-load-more-container:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+a.ig-load-more-container {
+    display: inline-block;
+    margin: 0 auto;
+}
+
 .ig-load-more div {
     margin-top: 120px;
     transform: translateY(-50%);
     font-size: x-large;
 }
 
-.ig-load-more:hover {
+.ig-load-more-container:hover {
     text-decoration: none;
-    color: #2D79C1;
-    border-color: #2D79C1;
     cursor: pointer;
 }
 
