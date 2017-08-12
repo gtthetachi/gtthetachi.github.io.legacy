@@ -1,0 +1,602 @@
+---
+#entry point
+---
+/* ===== General ===== */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: #ffffff;
+    font: 15px 'Roboto', serif;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Slab";
+    text-align:center;
+    color: #B1242F;
+    margin: 0 0 0.5em 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+.cl-effect-21 a {
+    color: rgb(255, 233, 233);
+    text-shadow: none;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.cl-effect-21 a::before,
+.cl-effect-21 a::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #CAB99B;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.cl-effect-21 a::before {
+    top: 0;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.cl-effect-21 a::after {
+    bottom: 0;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.cl-effect-21 a:hover,
+.cl-effect-21 a:focus {
+    color: #CAB99B;
+}
+
+.cl-effect-21 a:hover::before,
+.cl-effect-21 a:focus::before,
+.cl-effect-21 a:hover::after,
+.cl-effect-21 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+/* ===== Officers ===== */
+
+#officer_block {
+    margin:0 auto;
+    text-align: center;
+}
+
+.officer_row  {
+    margin: 10px;
+    display: inline-block;
+    background-size: cover;
+    padding: 10px 0;
+    height:400px;
+    width:300px;
+    position: relative;
+    text-align: center;
+}
+
+.officer_bio {
+    display: table-row;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+    background-color:rgba(255, 255, 255, .9);
+    line-height: 1.5em;
+}
+
+.officer_bio a {
+    color:black;
+    text-decoration: none;
+}
+
+.officer_bio a:hover {
+    text-decoration: underline;
+}
+
+.officer_position {
+    padding-bottom: 10px;
+}
+
+/* ===== Contact ===== */
+
+#map {
+    border:0;
+    width: 100%;
+    height: 400px;
+}
+
+#address {
+    text-align: center;
+}
+
+/* ===== Form ====== */
+
+form {
+    margin: 0 auto;
+}
+
+textarea {
+    resize: none;
+}
+
+form#rush {
+    background: #CCCCCC;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    counter-reset: fieldsets;
+    padding: 20px;
+    width: 90%;
+    max-width: 420px;
+}
+
+form#rush fieldset {
+    margin-bottom: 10px;
+}
+
+form#rush fieldset:last-of-type {
+    margin-bottom: 0;
+}
+
+form#rush legend {
+    color:#9A1914;
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
+
+form#rush > fieldset > legend:before {
+    content: "Step " counter(fieldsets) ": ";
+    counter-increment: fieldsets;
+}
+
+form#rush ol li {
+    border:2px solid white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding:5px 10px;
+    margin-bottom: 2px;
+}
+
+form#rush label {
+    float:left;
+    width: 100%;
+}
+
+form#rush input {
+    width:97%;
+    color: black;
+}
+
+form#contact {
+    width: 100%;
+}
+
+form#contact legend {
+    color:#9A1914;
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
+
+form#contact ol li {
+    border:2px solid white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+form#contact label {
+    float:left;
+    width: 40%;
+}
+
+form#contact input {
+    width:90%;
+    color: black;
+}
+
+form textarea {
+    width: 91%;
+}
+
+/* ===== Smallest ====== */
+
+.main {
+    position: relative;
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.container {
+    margin:0 auto;
+    width: 750px;
+}
+
+.page_title {
+    /*margin-top: 100px;*/
+    text-align: center;
+}
+
+.house_img {
+    width:100%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+header {
+    position: relative;
+    margin-bottom: 45px;
+    text-align: center;
+    width: 100%;
+    z-index: 800;
+    background-color: #C1332D;
+}
+
+header .logo {
+    z-index: 1000;
+}
+
+nav {
+    width: 100%;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #000;
+    width: 100%;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+nav a:hover,
+nav a:focus {
+    outline: none;
+}
+
+.nav-content {
+    text-align: justify;
+    display: none;
+}
+
+.nav-content li {
+    display: inline;
+    font-family: "Josefin Sans";
+    font-size: 1.4em;
+    line-height: 30px;
+    text-align: center;
+}
+
+.nav-content .stretch {
+    display: inline-block;
+    width: 100%;
+    *display: inline;
+    zoom:1;
+}
+
+
+footer {
+    text-align: right;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+footer img {
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+/* alex additions */
+div.intro {
+    position: relative;
+
+    height: 100vh;
+    padding-top: 100px;
+    margin-bottom: 0;
+
+    text-align: left;
+    background-image: url("images/house_rush.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.intro-content {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.intro-content h1 {
+    font-size: 65px;
+    margin: 0 auto;
+}
+
+.intro-content .arrow {
+    text-align: center;
+    font-size: large;
+}
+
+.body-content {
+    margin-top: 60px;
+}
+
+@media screen and (min-width: 380px) {
+    header {
+        margin-bottom: 0;
+    }
+
+    nav {
+        height: 25px;
+    }
+
+    nav a {
+        width: auto;
+    }
+
+    .nav-content {
+        height: 25px;
+        display: block;
+    }
+
+    #pull {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    header {
+        height: 75px;
+        box-shadow: #820500 0px 5px 0px 0px;
+    }
+
+    header a {
+        float: left;
+    }
+
+    nav a {
+        top: 25px;
+        text-decoration: none !important;
+    }
+
+    .nav-content {
+        float:right;
+        display: block;
+    }
+
+    .nav-content li {
+        float: left;
+        margin-right: 10px;
+        line-height: 30px;
+    }
+
+    .nav-content li:last-of-type {
+        margin-right: 0;
+    }
+
+    #pull {
+        display: none;
+    }
+
+    .cl-effect-21 a::before,
+    .cl-effect-21 a::after {
+        background: #FFFFFF;
+    }
+
+    .cl-effect-21 a:hover,
+    .cl-effect-21 a:focus {
+        color: #FFFFFF;
+    }
+
+    .page_title {
+        margin-top: 60px;
+    }
+
+    .house_img {
+        width:50%;
+    }
+
+    #map {
+        float: left;
+        margin-right: 15px;
+        width: 60%;
+        height: 480px;
+    }
+
+    #address {
+        text-align: left;
+    }
+
+    form#contact {
+        width: 35%;
+        float: left;
+    }
+    .officer_row  {
+        height:450px;
+        width:380px;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/*=======================================GALLERY=========================================*/
+
+a.ig-embed {
+    display: inline-block;
+    margin: 10px;
+
+    width: 200px;
+    height: 200px;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+a.ig-embed .ig-embed-desc {
+    display: block;
+    opacity: 0;
+    /* transition: all 0.7s; */
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 25px;
+    font-weight: bold;
+}
+
+a.ig-embed .ig-embed-desc .link-flair {
+    margin-top: 20px;
+    text-align: center;
+    color: #DFDFDF;
+    font-weight: 100;
+}
+
+a.ig-embed:hover .ig-embed-desc {
+    opacity: 100;
+
+    background-color: rgba(28, 28, 28, 0.76);
+    color: white;
+    transition: none;
+}
+
+.ig-load-more {
+    display: block;
+    margin: -5px auto; /* counteract 5px border */
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border: 5px solid #C1332D;
+    border-radius: 50%;
+    color: #C1332D;
+    padding: 0;
+
+    transition: color 0.5s, border 0.5s;
+}
+
+.ig-load-more:hover {
+    color: #2D79C1;
+    border-color: #2D79C1;
+}
+
+a.ig-load-more-container:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+a.ig-load-more-container {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.ig-load-more div {
+    margin-top: 120px;
+    transform: translateY(-50%);
+    font-size: x-large;
+}
+
+.ig-load-more-container:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#instafeed {
+    max-width: 700px;
+    margin: 15px auto;
+
+}
+
+#instafeed.error {
+    border: 2px solid red;
+    color: #770E0E;
+    padding: 10px;
+}
+#instafeed.error:before {
+    content: "Whoops, looks like something went wrong with our instagram widget.  Sorry about that!  Visit our instagram page directly with the link below."
+}
+
+/*=======================================TODO=========================================*/
+.todo {
+    color: #153A68;
+    font-style: italic;
+    background-color: rgba(255, 182, 24, 0.57);
+    padding: 5px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.todo:before {
+    content: "TODO:";
+    display: block;
+    background-color: #956806;
+    color: #FFF2D7;
+    font-weight: bold;
+    font-style: normal;
+    font-size: x-large;
+    margin: -5px -5px 5px -5px;
+    padding: 2px;
+}
